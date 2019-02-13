@@ -21,7 +21,7 @@ describe "GIT" do
 
   it "4. What command allows you to add all previously all tracked, modified files
       and create a message, 'add img to index' for the commit in one command?" do
-    answer = "git add -A -m 'add img to index'"
+    answer = "git commit -A -m 'add img to index'"
     encoded_answer = "00565151beeb1fa3682d6386399eaf87b788a5bc"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -53,7 +53,7 @@ describe "GIT" do
   it "8. From the feature branch 'add-image', what is the syntax for creating a remote
       add-image branch with all of the local branch's content? 
       (remote is still called 'upstream')" do
-    answer = "git push -u -b upstream"
+    answer = "git push -u -b upstream add-image"
     encoded_answer = "b0ce3fc84df6855995340cf16bce42f90ac9f9ab"
     expect(encode(answer)).to eq(encoded_answer)
   end
