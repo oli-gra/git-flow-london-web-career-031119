@@ -101,7 +101,7 @@ describe "GIT" do
 
   it "14. From the add-img branch, what command do you run to pull down all the changes 
       from the add-img branch on the remote 'upstream'?" do
-    answer = "git fetch add-img"
+    answer = "git fetch upstream add-img"
     encoded_answer = "6c3209e77d80f4f76e692f6b7a9fb9be17068e3e"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -129,7 +129,7 @@ describe "GIT" do
 
   it "18. What is the one line syntax for creating and switching to a branch called 
      'add-nav-bar'?" do
-    answer = "git checkout -b 'add-nav-bar'"
+    answer = "git checkout -b add-nav-bar"
     encoded_answer = "f6317616a8601aeb64c0f27f71a4b7bf9e3b8453"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -174,7 +174,7 @@ describe "GIT" do
 # describe "MERGING:" do
   it '23. To merge a feature branch into master, you must first be on master' do
     # "true" or "false", in a string
-    answer = "false"
+    answer = "true"
     encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
     expect(encode(answer)).to eq(encoded_answer)
   end
